@@ -1,0 +1,4 @@
+ex2.c:64:5:main	8	static
+ex2.c:122:6:SystemClock_Config	72	static
+ex2.c:158:13:MX_GPIO_Init	32	static
+ex2.c:185:6:Error_Handler	4	static,ignoring_inline_asm
