@@ -1,0 +1,3 @@
+seg7.c:25:6:display7SEG	32	static
+seg7.c:31:6:update7SEG	16	static
+seg7.c:62:6:turnOffAll7SEG	16	static

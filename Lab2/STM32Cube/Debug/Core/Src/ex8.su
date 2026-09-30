@@ -1,0 +1,7 @@
+ex8.c:14:6:ex8_setTimer1	16	static
+ex8.c:19:6:ex8_setTimer2	16	static
+ex8.c:24:6:ex8_timerRun	4	static
+ex8.c:39:6:ex8_updateClockBuffer	4	static
+ex8.c:46:6:ex8_init	8	static
+ex8.c:56:6:ex8_loop	8	static
+ex8.c:91:6:ex8_timer_isr	8	static

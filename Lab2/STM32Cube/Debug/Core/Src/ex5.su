@@ -1,0 +1,4 @@
+ex5.c:6:6:ex5_init	8	static
+ex5.c:14:6:updateClockBuffer	4	static
+ex5.c:23:6:ex5_loop	8	static
+ex5.c:43:6:ex5_timer_isr	8	static

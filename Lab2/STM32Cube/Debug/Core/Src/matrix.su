@@ -1,0 +1,2 @@
+matrix.c:20:6:MATRIX_DisableAllColumns	16	static
+matrix.c:26:6:MATRIX_UpdateColumn	24	static

@@ -1,0 +1,5 @@
+ex10.c:10:13:shiftMatrixLeft	16	static
+ex10.c:17:13:rotateMatrix90Clockwise	32	static
+ex10.c:35:6:ex10_init	8	static
+ex10.c:40:6:ex10_loop	16	static
+ex10.c:54:6:ex10_timer_isr	4	static
