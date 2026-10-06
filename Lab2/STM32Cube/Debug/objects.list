@@ -5,7 +5,6 @@
 "./Core/Src/ex4.o"
 "./Core/Src/ex5.o"
 "./Core/Src/ex7.o"
-"./Core/Src/ex8.o"
 "./Core/Src/ex9.o"
 "./Core/Src/main.o"
 "./Core/Src/matrix.o"

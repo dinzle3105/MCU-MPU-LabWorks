@@ -12,7 +12,6 @@ C_SRCS += \
 ../Core/Src/ex4.c \
 ../Core/Src/ex5.c \
 ../Core/Src/ex7.c \
-../Core/Src/ex8.c \
 ../Core/Src/ex9.c \
 ../Core/Src/main.c \
 ../Core/Src/matrix.c \
@@ -31,7 +30,6 @@ OBJS += \
 ./Core/Src/ex4.o \
 ./Core/Src/ex5.o \
 ./Core/Src/ex7.o \
-./Core/Src/ex8.o \
 ./Core/Src/ex9.o \
 ./Core/Src/main.o \
 ./Core/Src/matrix.o \
@@ -50,7 +48,6 @@ C_DEPS += \
 ./Core/Src/ex4.d \
 ./Core/Src/ex5.d \
 ./Core/Src/ex7.d \
-./Core/Src/ex8.d \
 ./Core/Src/ex9.d \
 ./Core/Src/main.d \
 ./Core/Src/matrix.d \

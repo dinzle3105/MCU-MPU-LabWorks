@@ -1,4 +1,4 @@
-Core/Src/ex8.o: ../Core/Src/ex8.c ../Core/Inc/main.h \
+Core/Src/ex9_timer.o: ../Core/Src/ex9_timer.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -23,7 +23,7 @@ Core/Src/ex8.o: ../Core/Src/ex8.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/seg7.h ../Core/Inc/main.h
+ ../Core/Inc/matrix.h ../Core/Inc/main.h
 
 ../Core/Inc/main.h:
 
@@ -75,6 +75,6 @@ Core/Src/ex8.o: ../Core/Src/ex8.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
-../Core/Inc/seg7.h:
+../Core/Inc/matrix.h:
 
 ../Core/Inc/main.h:
