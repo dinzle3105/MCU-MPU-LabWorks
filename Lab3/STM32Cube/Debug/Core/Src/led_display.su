@@ -1,0 +1,14 @@
+led_display.c:79:13:write_pin	16	static
+led_display.c:84:13:disable_all_digits	16	static
+led_display.c:92:13:write_segments	32	static
+led_display.c:109:6:led_display_init	16	static
+led_display.c:135:6:led_display_set_traffic	24	static
+led_display.c:146:6:reset_traffic_light	4	static
+led_display.c:172:23:temp_ptr	16	static
+led_display.c:180:15:get_duration	24	static
+led_display.c:186:6:inc_duration	24	static
+led_display.c:194:6:save_duration	16	static
+led_display.c:203:22:duration_of	16	static
+led_display.c:210:19:next_of	16	static
+led_display.c:217:13:update_normal_traffic	24	static
+led_display.c:241:6:led_display_task	32	static
