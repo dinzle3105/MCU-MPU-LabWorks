@@ -1,0 +1,40 @@
+# STM32CubeIDE build output
+**/Debug/
+**/Release/
+
+# STM32CubeIDE machine-local project metadata
+**/.settings/
+**/.project
+**/.cproject
+**/.mxproject
+
+# Proteus backups and per-user workspace files
+**/*.pdsbak
+**/*.workspace
+
+# Common compiler and build artifacts
+*.o
+*.d
+*.su
+*.a
+*.so
+*.dll
+*.exe
+*.bin
+*.elf
+*.hex
+*.map
+*.list
+*.asm
+objects.list
+objects.mk
+sources.mk
+makefile
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
