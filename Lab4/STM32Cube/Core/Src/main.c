@@ -33,6 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,46 +70,42 @@ void Print_Time(void)
 // Five required periodic tasks
 void Task_500ms(void)
 {
-    printf("[500ms] Time: %lu ms\r\n",
+    printf("Task [500ms] Time: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
 void Task_1000ms(void)
 {
-    printf("[1000ms] Time: %lu ms\r\n",
+    printf("Task [1000ms] Time: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
 void Task_1500ms(void)
 {
-    printf("[1500ms] Time: %lu ms\r\n",
+    printf("Task [1500ms] Time: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
 void Task_2000ms(void)
 {
-    printf("[2000ms] Time: %lu ms\r\n",
+    printf("Task [2000ms] Time: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
 void Task_2500ms(void)
 {
-    printf("[2500ms] Time: %lu ms\r\n",
+    printf("Task [2500ms] Time: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
 // One-shot timeout callbacks
-void Timeout_A(void)
+void OneShot(void)
 {
-    printf("Timeout A: %lu ms\r\n",
+    printf("OneShot Task: %lu ms\r\n",
            (unsigned long)get_time());
 }
 
-void Timeout_B(void)
-{
-    printf("Timeout B: %lu ms\r\n",
-           (unsigned long)get_time());
-}
+
 
 void Task_Cancelled(void)
 {
@@ -151,20 +148,12 @@ int main(void)
   // Demonstration: callback every 10 ms
   SCH_Add_Task(Print_Time, 0, 1);
 
-  // Five required periodic tasks
+  // periodic tasks
   SCH_Add_Task(Task_500ms, 50, 50);
-  SCH_Add_Task(Task_1000ms, 100, 100);
   SCH_Add_Task(Task_1500ms, 150, 150);
-  SCH_Add_Task(Task_2000ms, 200, 200);
-  SCH_Add_Task(Task_2500ms, 250, 250);
 
   // One-shot callbacks with different initial delays
-  SCH_Add_Task(Timeout_A, 300, 0);
-  SCH_Add_Task(Timeout_B, 450, 0);
-
-  // Demonstrate task deletion
-  uint32_t cancelled_id = SCH_Add_Task(Task_Cancelled, 500, 0);
-  SCH_Delete_Task(cancelled_id);
+  SCH_Add_Task(OneShot, 125, 0);
 
   // Start TIM2 interrupt only after scheduler setup
   HAL_TIM_Base_Start_IT(&htim2);
@@ -178,6 +167,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	SCH_Dispatch_Tasks();
+
   }
   /* USER CODE END 3 */
 }
